@@ -1,10 +1,12 @@
 // TODO: Require Controllers...
 const {Router} = require('express')
 const router = Router()
+const {getCubes} = require('../controllers/cubes')
 
 router.get('/', (req, res) => {
         res.render('index', {
-            title: 'Home | Cube Workshop'
+            title: 'Home | Cube Workshop',
+            cubes: getCubes()
         })
     })
 
