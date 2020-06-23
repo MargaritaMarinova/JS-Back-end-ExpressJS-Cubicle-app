@@ -9,7 +9,7 @@ const getCubes = () => {
 
 }
 
-console.log(getCubes())
+
 
 module.exports = {
     getCubes
